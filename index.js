@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
+const os
 const client = new Discord.Client();
-const token = 'NzI1NjI2Nzc5MzA5NzAzMTc5.XvR9Jg.H_QLtDb9QpqRwm8MMD3c4NB5mTE';
+const token = 'access_token';
 const welcomeChannelName = "일반";
 const byeChannelName = "일반";
 const welcomeChannelComment = "어서오세요.";
@@ -31,5 +32,5 @@ client.on('message', (message) => {
     message.reply('you');
   }
 });
-
+access_token = os.environ["Bot_TOKEN"]
 client.login(token);
